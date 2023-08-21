@@ -1,0 +1,404 @@
+body {
+    background: rgb(0, 0, 0);
+    font-family: 'Rubik';
+    overflow-x: hidden;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.stiky {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    transition: top 0.3s;
+}
+
+.navb {
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.431); */
+    background: rgb(11, 11, 11);
+    height: 70px;
+    min-width: 550px;
+    display: flex;
+    /* border-radius: 5px; */
+
+}
+
+.navb ul {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    /* font-size: 25px; */
+
+}
+
+.navb ul li {
+    margin-right: 35px;
+    font-weight: 700;
+    /* font-size: 19px; */
+    list-style: none;
+    background: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+
+}
+
+.navb ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all .4s ease-out;
+    /* transform: scale(1.1); */
+}
+
+.navb ul li :hover {
+    color: aqua;
+
+    transition: all .6s ease-out;
+}
+
+.logo {
+    display: flex;
+    margin: auto;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 155px;
+    height: 65px;
+    /* border-radius: 100%; */
+    margin-bottom: 10px;
+
+}
+
+
+.btn {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    backdrop-filter: blur(30px);
+    letter-spacing: 2px;
+    background: rgba(129, 129, 129, 0);
+    margin: 10px 10px 10px 20px;
+    padding: 12px 35px;
+    border: 2px solid rgb(32, 244, 255);
+    border-radius: 30px;
+    margin-top: 12px;
+    /* transition: .15 ease; */
+}
+
+.btn-primary:hover {
+    background: rgb(32, 244, 255);
+    /* color:black; */
+    transition: all .4s ease-out;
+
+}
+
+.btn-primary :hover {
+    color: black;
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn1 {
+    justify-content: center;
+    display: flex;
+}
+
+#lan {
+    background: black;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    /* color: red; */
+}
+
+
+/* LOADING LINE ANIMATION */
+
+
+.loading-line {
+    width: 250px;
+    height: 2px;
+    background-color: #00ffff;
+    position: relative;
+    animation: loading 4s infinite ;
+}
+
+
+/* LOADING ANIMATION */
+@keyframes loading {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+
+/* PLANS BOXES */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	width: 100%;
+	/* min-height: 100vh; */
+	
+}
+
+.container h2 {
+	color: #ffffff;
+	font-size: 32px;
+    font-weight: 500;
+	padding-top: 50px;
+    
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.price-row {
+	width: 90%;
+	max-width: 1100px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* COLUMNS Pattern creation */
+	grid-gap: 50px;
+}
+
+.price-col {
+	background: black;
+	padding: 5% 9%;
+	border-radius: 25px;
+    border: 3px solid #00ffff;
+	color: #fff;
+	text-align: center;
+    transition: 0.2s;
+}
+
+.price-col p {
+	font-size: 22px;
+}
+
+.price-col h3 {
+	font-size: 30px;
+	margin: 20px 0 0px;
+	font-weight: 500;
+}
+
+.type {
+	font-size: 15px;
+	margin: 5px 0 40px;
+	font-weight: 500;
+    color: grey;
+}
+
+.price-col h3 span {
+	font-size: 16px;
+}
+
+.price-col ul {
+	text-align: left;
+	margin: 20px 0;
+	color: #ddd;
+}
+
+.price-col ul li {
+	margin: 15px 0;
+	size: 20px;
+}
+
+.price-col button {
+	width: 100%;
+	padding: 14px 0;
+	background: transparent;
+	color: #fff;
+	font-size: 18px;
+	border: 1px solid #fff;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.price-col button:hover {
+	background: #00ffff;
+    color: black;
+}
+
+.price-col:hover
+{
+    box-shadow: 5px 10px #888888;
+
+    box-shadow: 5px 5px 20px 0px #00ffff;
+
+}
+
+
+/* Footer */
+
+
+footer {
+    height: 100px;
+    background-color: #333;
+    padding-top: 8px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+
+    /* To fix the footer at the last */
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+
+
+/* Social Media Icons */
+
+.social-media a i {
+    color: #fff;
+    /* Set the desired color, in this case, white */
+    margin-right: 40px;
+    /* Adjust the spacing as needed */
+    margin-bottom: 15px;
+
+    /* ON HOVER COLOR CHANGE */
+
+    color: #fff;
+    /* Set the initial color, in this case, white */
+
+    transition: color 0.4s ease;
+    /* Add a smooth transition effect */
+
+    font-size: 24px;
+    /* Adjust the size as needed */
+
+    color: #fafafa;
+}
+
+/* ON HOVER COLOR CHANGE */
+.social-media a:hover i {
+    color: #00ffff;
+    /* Set the color when hovering, in this case, red */
+}
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: auto;
+
+}
+
+
+/* Privacy Policy column */
+.privacy_policy {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 18px;
+
+}
+
+.privacy_policy:hover {
+    color: #00ffff;
+}
+
+.all_rights p
+{
+    margin-bottom: 0px;
+}
+.all_rights
+{
+    font-size: 18px;
+    
+}
+.all_rights:hover
+{
+    color: #00ffff;
+    cursor: pointer;
+}
+
+.last
+{
+    margin: 0%;
+}
+
+.choose:hover
+{
+color: red;
+  transition: all ease-in 0.3s;
+  cursor:pointer;
+  /* transform: scale(1.2); */
+}
+
+
+
+/* LOADING LINE ANIMATION */
+
+
+.loading-line {
+    width: 200px;
+    height: 2px;
+    background-color: #00ffff;
+    position: relative;
+    animation: loading 4s infinite;
+  }
+  
+  @keyframes loading {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+
+
+.extrainfo
+{
+    color: rgb(170, 170, 170);
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    padding: 10px 180px 10px 180px;
+  
+}  
+

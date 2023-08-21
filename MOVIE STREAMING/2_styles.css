@@ -1,0 +1,118 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    /* font-size: small; */
+}
+
+
+/* Set some basic styles */
+body {
+
+    background: rgb(0, 0, 0);
+
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+
+    /* To enable only vertical scroll! */
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+footer {
+    height: 90px;
+    background-color: #333;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+
+    /* To fix the footer at the last */
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+
+
+/* Social Media Icons */
+
+.social-media a i {
+    color: #fff;
+    /* Set the desired color, in this case, white */
+    margin-right: 40px;
+    /* Adjust the spacing as needed */
+    margin-bottom: 15px;
+
+    /* ON HOVER COLOR CHANGE */
+
+    color: #fff;
+    /* Set the initial color, in this case, white */
+
+    transition: color 0.4s ease;
+    /* Add a smooth transition effect */
+
+    font-size: 24px;
+    /* Adjust the size as needed */
+
+    color: #fafafa;
+}
+
+/* ON HOVER COLOR CHANGE */
+.social-media a:hover i {
+    color: #00ffff;
+    /* Set the color when hovering, in this case, red */
+}
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: auto;
+
+}
+
+
+/* Privacy Policy column */
+.privacy_policy {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+
+}
+
+.privacy_policy:hover {
+    color: #00ffff;
+}
+
+
+.all_rights {
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+
+.all_rights:hover
+{
+    color: #00ffff;
+    cursor: pointer;
+}

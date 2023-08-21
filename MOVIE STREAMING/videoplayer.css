@@ -1,0 +1,166 @@
+body {
+    background: rgb(0, 0, 0);
+    font-family: 'Rubik';
+    overflow-x: hidden;
+}
+
+.stiky {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    transition: top 0.3s;
+}
+
+.navb {
+    color: white;
+    background-color: rgba(41, 41, 41, 0.431);
+    height: 60px;
+    min-width: 550px;
+    display: flex;
+    /* border-radius: 5px; */
+    /* font-size: 25px; */
+    margin-top: 5px;
+
+}
+
+.navb ul {
+    display: flex;
+    margin: auto;
+    align-items: center;
+
+}
+
+.navb ul li {
+    margin-right: 35px;
+    font-weight: 700;
+    /* font-size: 12px; */
+    list-style: none;
+    background: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+
+}
+
+.navb ul li a {
+    text-decoration: none;
+    color: white;
+    /* transition: all .5s ease-out; */
+    transform: scale(1.1);
+}
+
+.navb ul li :hover {
+    color: aqua;
+
+    transition: all .6s ease-out;
+}
+
+.logo {
+    display: flex;
+    margin: auto;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 155px;
+    height: 65px;
+    /* border-radius: 100%; */
+    margin-bottom: 10px;
+
+}
+
+.btn {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    backdrop-filter: blur(30px);
+    letter-spacing: 2px;
+    background: rgba(129, 129, 129, 0.233);
+    margin: 10px 10px 10px 20px;
+    padding: 12px 35px;
+    border: 2px solid rgb(32, 244, 255);
+    border-radius: 30px;
+    /* transition: .15 ease; */
+}
+
+.btn-primary:hover {
+    background: rgb(32, 244, 255);
+    color: black;
+    transition: all .4s ease-out;
+
+}
+
+
+.btn-primary a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn1 {
+    justify-content: center;
+    display: flex;
+}
+
+#lan {
+    background: black;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    /* color: red; */
+}
+
+
+/* VIDEO PLAYER */
+
+/* Center the video player on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+/* Style for the video player container */
+.video-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    /* Set the desired width of the video player */
+    height: 450px;
+    /* Set the desired height of the video player */
+    margin-top: 160px;
+
+}
+
+/* Style for the video element */
+#myVideo {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border: 2px solid rgb(32, 244, 255);
+    /* Preserve the aspect ratio and cover the entire container */
+}
+
+
+.tagline {
+    color: rgb(32, 244, 255);
+    margin-top: 25px;
+    /* margin-bottom: 80px; */
+}
+.tagline2 {
+    color: rgb(206, 206, 206);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}

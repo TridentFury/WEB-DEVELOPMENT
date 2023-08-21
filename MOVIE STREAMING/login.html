@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="login.css">
+	<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> Other meta tags and CSS links -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+
+	<title>Document</title>
+</head>
+
+<body>
+	<header class="stiky">
+		<div class="navb">
+			<div class="logo">
+				<!-- <img src="./logo.png" alt="logo"> -->
+				<a href="index.html"><img src="./logo.png" alt=""></a>
+			</div>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="www.youtube.com">MOVIES</a></li>
+				<li><a href="www.youtube.com">WEB SHOWS</a></li>
+				<li><a href="www.youtube.com">DOCUMENTRIES</a></li>
+				<li><a href="www.youtube.com">CONTACT US</a></li>
+				<li><a href="www.youtube.com">COPYRIGHT POLICY</a></li>
+			</ul>
+			<div class="left">
+				<i class="fa fa-search" aria-hidden="true"></i>
+				<span class="line"></span>
+				<i class="fa fa-globe" aria-hidden="true"></i> <select name="language" id="lan">
+					<div class="option">
+						<option value="lan">EN</option>
+						<option value="lan">HI</option>
+						<option value="lan">AU</option>
+						<option value="lan">AR</option>
+					</div>
+				</select>
+				<!-- <button class="btn btn-primary"><a href="4_login.html">Sign in</a></button> -->
+				<button class="btn btn-primary"><a href="login.html">Sign in</a></button>
+			</div>
+		</div>
+	</header>
+
+	<br><br>
+	<h2>SKULLFLIX - LOGIN</h2>
+	<div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<form action="#">
+				<h1>Create Account</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span>or use your email for registration</span>
+				<input type="text" placeholder="Name" />
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<button>Sign Up</button>
+				
+			</form>
+			
+		</div>
+		<div class="form-container sign-in-container">
+			<form action="#">
+				<h1>Sign in</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span style="color: white;">or use your account</span>
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<a href="#" style="color: white;">Forgot your password?</a>
+				<button id="popupbutton">Sign In</button>
+				<div id="popupContainer">
+					
+				</div>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Welcome Back!</h1>
+					<p>Keep connected with us, please login with your personal info only</p>
+					<button class="ghost" id="signIn">Sign In</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>Hello, Friend!</h1>
+					<p>Enter your details and start the ENTERTAINMENT</p>
+					<button class="ghost" id="signUp">Sign Up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<footer>
+		<p class="foot">
+			Created by <span style="color: rgb(32, 244, 255); font-size: 18px;">VIBHOR G</span> | &copy 2023 | SKULLFLIX
+		</p>
+	</footer>
+
+</body>
+<script src="login.js"></script>
+<script src="popup.js"></script>
+
+</html>
